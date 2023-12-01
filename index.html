@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/card.css">
+    <title>Solitaire</title>
+</head>
+
+<body>
+    <div id="upperContainer">
+        <div id="deckDiv">
+            <div id="deckHidden">
+                <button id="resetDeck">Reset</button>
+            </div>
+            <div id="deckFlipped"></div>
+        </div>
+        <div id="completeDiv">
+            <div id="completeSlot0" class="completeSlot"></div>
+            <div id="completeSlot1" class="completeSlot"></div>
+            <div id="completeSlot2" class="completeSlot"></div>
+            <div id="completeSlot3" class="completeSlot"></div>
+        </div>
+    </div>
+    <div id="lowerContainer">
+    </div>
+
+    <script src="script/card.js"></script>
+    <script src="script/game.js"></script>
+</body>
+
+</html>

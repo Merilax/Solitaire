@@ -1,0 +1,68 @@
+* {
+    --bg-green: #585;
+    --darker-bg-green: #242;
+    --border-width: 5px;
+    --slot-border-width: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-green);
+    height: 100vh;
+    width: 100vw;
+}
+
+#upperContainer {
+    display: flex;
+    border-bottom: var(--slot-border-width) solid var(--darker-bg-green);
+    padding: 20px;
+}
+
+#lowerContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#deckDiv {
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-around;
+    border-right: var(--slot-border-width) solid var(--darker-bg-green);
+}
+
+#resetDeck {
+    position: absolute;
+    width: 100px;
+    height: 150px;
+}
+
+#completeDiv {
+    display: flex;
+    flex-grow: 4;
+    justify-content: space-around;
+    border-left: var(--slot-border-width) solid var(--darker-bg-green);
+}
+
+.completeSlot {
+    display: inline-block;
+}
+
+#deckHidden,
+#deckFlipped,
+.completeSlot {
+    border: 2px solid var(--darker-bg-green);
+    border-radius: var(--border-width);
+    width: 100px;
+    height: 150px;
+}
+
+.column {
+    display: flex;
+    flex-flow: column nowrap;
+    border: 2px solid var(--darker-bg-green);
+    border-radius: var(--slot-border-width);
+    width: 100px;
+    min-height: 150px;
+}
